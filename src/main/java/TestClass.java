@@ -23,13 +23,13 @@ public class TestClass {
 
     @Test
     public void testUntitledTestCase() throws Exception {
-        driver.get("https://ok.ru/");
         driver.findElement(By.id("field_email")).clear();
         driver.findElement(By.id("field_email")).sendKeys("sdfsfsdf");
         driver.findElement(By.id("field_password")).click();
         driver.findElement(By.id("field_password")).clear();
         driver.findElement(By.id("field_password")).sendKeys("sfsfsdfs");
-        driver.findElement(By.xpath("//input[@value='Войти в Одноклассники']")).click();
+        driver.findElement(By.xpath("//input[@value='Войти в Одноклассники']")).click();driver.get("https://ok.ru/");
+
     }
 
     @After
